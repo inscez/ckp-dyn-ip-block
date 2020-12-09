@@ -58,7 +58,7 @@ fwaccel dos stats get
 #        ./initial_setup_blacklist.sh -a on -g local_gw_file -f local_url_file
 # Make sure to have /home/admin/dos-whitelist-v4.conf /home/admin/blacklist-rf-log-clean.sh and /home/admin/blacklist-rf-block.sh
 
-#cprid_util -server 10.128.36.25 -verbose rexec -rcmd bash -c "curl_cli --insecure https://esdcsv-secmg01.ptcnet.ptc.com/iprisklist.txt | wc -l"
+#cprid_util -server 10.128.36.25 -verbose rexec -rcmd bash -c "curl_cli --insecure https://<IP>/iprisklist.txt | wc -l"
 
 #Commands needed to be run to enable
 fwaccel dos  blacklist -l /home/admin/blacklist.txt
